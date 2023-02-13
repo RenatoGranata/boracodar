@@ -22,5 +22,21 @@ Projetos #boraCodar da Rocketseat
                     <a href="desafio02-cardProduto">🔗</a>
                 </td>
             </tr>
+            <tr>
+                <td>03</td>
+                <td>Buttons test</td>
+                <td>06/02/23</td>
+                <td>
+                    <a href="desafio03">🔗</a>
+                </td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>Whatsapp chat</td>
+                <td>10/02/23</td>
+                <td>
+                    <a href="desafio04">🔗</a>
+                </td>
+            </tr>
         </tbody>
     </table>
