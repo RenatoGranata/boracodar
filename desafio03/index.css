@@ -1,0 +1,338 @@
+:root{
+    --background-01: #0B0911;
+    --background-02: #130F1E;
+    --thead-background: #1C162C;
+
+    --text-color: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+}
+
+button, h1, h2{
+    font-family: 'Inter', sans-serif;
+}
+
+p, th, a{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#main-container{
+    width: 100%;
+    
+    display: flex;
+}
+
+.buttons-container{
+    width: 100%;
+    
+    background: var(--background-01);
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    padding: 4.8125rem 6.6875rem;
+    
+}
+
+.info{
+    color:#FFFFFF;
+    margin-bottom: 2.25rem;
+}
+.info h2{
+    margin-bottom: 0.5rem;
+}
+.info p{
+    opacity: 0.7;
+}
+
+
+
+
+table{
+    width: 100%;
+    background: var(--thead-background);
+    border: 5px solid var(--thead-background);
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    
+}
+th{
+    color: #FFFFFF;
+    /* border: 1px solid red; */
+    padding: 2rem 1rem;
+}
+tbody{
+    background: #0B0911;
+    border: #0B0911;
+    
+}
+
+
+td{
+    color: var(--text-color);
+    padding: 1rem;
+    text-align: center;
+    outline: 1px solid #0B0911;
+}
+.vertical-head{
+    background: var(--thead-background);
+    outline: 1px solid var(--background);
+}
+
+.vertical-head a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
+button{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    height: 3rem;
+    width: 12rem;
+
+    padding: 0.75rem 1.5rem;
+    border-radius: 1.5rem;
+    font-size: 0.8rem;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+.primary-button{
+    background: #8257E5;
+}
+
+.secundary-button{
+    background: #3C3748;
+}
+
+.tertiary-button{
+    background: transparent;
+}
+
+.hover-buttons .primary-button{
+    width: 10.125rem;
+    background: #9674E5;
+
+    
+}
+
+.hover-buttons .secundary-button{
+    width: 11.6875rem;
+    height: 3rem;
+    background: #6A617F;
+}
+
+
+.focus-buttons button{
+    border: 2px solid #D9CDF7;
+}
+.focus-buttons .primary-button{
+    width: 10.125rem;
+}
+.focus-buttons .tertiary-button{
+    width: 10.5rem;
+}
+
+
+.disabled-buttons button{
+    opacity: 0.56;
+}
+
+.disabled-buttons .secundary-button{
+    width: 12.9375rem;
+}
+
+
+
+
+.loading-buttons .primary-button{
+    width: 14.0625rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.5rem;
+
+}
+.loading-buttons .secundary-button{
+    width: 14.0625rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.5rem;
+
+}
+.loading-buttons .tertiary-button{
+    width: 14.0625rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.5rem;
+
+}
+.movable-buttons .primary-button{
+    width: 14.0625rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.5rem;
+
+}
+.movable-buttons .secundary-button{
+    width: 14.0625rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.5rem;
+
+}
+.movable-buttons .tertiary-button{
+    width: 14.0625rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.5rem;
+
+}
+
+.button-test{
+    width: 25.375rem;
+    background: var(--background-02);
+    padding: 4.8125rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4.25rem;
+     
+ }
+
+.test-info{
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 0.5rem;
+}
+.test-info p{
+    font-size: 0.9rem;
+}
+
+.interactive-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.interactive-buttons > button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.interactive-buttons.hover .primary-button:hover{
+    
+    background: #9674E5;
+    cursor: pointer;
+}
+.interactive-buttons.hover .secundary-button:hover{
+    
+    background: #6A617F;
+    cursor: pointer;
+}
+.interactive-buttons.hover .tertiary-button:hover{
+    background: #211a36;
+    cursor: pointer;
+}
+
+.interactive-buttons.focus .primary-button:focus{
+    
+    border: 2px solid #D9CDF7;
+}
+.interactive-buttons.focus .secundary-button:focus{
+    
+    border: 2px solid #D9CDF7;
+}
+.interactive-buttons.focus .tertiary-button:focus{
+    border: 2px solid #D9CDF7;
+}
+
+
+.interactive-buttons.disabled .primary-button{
+    
+    opacity: 0.56;
+}
+.interactive-buttons.disabled .secundary-button{
+    opacity: 0.56;
+}
+.interactive-buttons.disabled .tertiary-button{
+    opacity: 0.56;
+}
+
+
+.interactive-buttons button{
+    cursor: pointer;
+}
+.interactive-buttons i{
+    display: none;
+}
+
+
+.interactive-buttons button.active i{
+    display: block;
+    animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+.interactive-buttons.animation01 button.active{
+    background-image: url(./assets/buttonPixels/pixel.png);
+    transition-delay: 1s;
+    background-size: 180px;
+    animation: animate 0.8s steps(8) forwards;
+}
+
+@keyframes animate{
+    0% {
+        background-position-y: 0;
+      }
+      100% {
+        background-position-y: -480px;
+      }
+}
