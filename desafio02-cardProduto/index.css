@@ -1,0 +1,385 @@
+:root{
+    --color-01: #D9CDF7;
+    --redimensionamento: 1.65;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: var(--color-01);
+    
+}
+
+body *{
+    font-family: 'Lato';
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+#main-container{
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0.8125rem;
+}
+
+.product{
+    
+
+    width: calc(28.0625rem * var(--redimensionamento));
+    
+    height: calc(15.8125rem * var(--redimensionamento));
+
+    
+}
+
+.product-description{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+h1{
+    font-family: 'Crimson Pro';
+    font-size: calc(2rem * var(--redimensionamento))
+}
+
+span:first-child{
+
+    color: #271A45;
+
+    text-transform: uppercase;
+    font-size: calc(0.625rem * var(--redimensionamento));
+    font-weight: 300;
+}
+
+.price{
+    font-size: calc(1rem * var(--redimensionamento));
+    color: #271A45;
+    opacity: 0.7;
+}
+
+button{
+    width: calc(9.6rem * var(--redimensionamento));
+    height: calc(2rem * var(--redimensionamento));
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: transparent;
+    color: #271A45;
+    border: 0.5px solid #271A45;
+
+    border-radius: 62.4375rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+
+    font-family: 'Lato';
+    text-transform: uppercase;
+    font-size: calc(0.75rem * var(--redimensionamento));
+    line-height: 16px;
+}
+
+button:hover{
+    transition: background 0.2s;
+    /* transition: color 0.1s; */
+    opacity: 0.5;
+    background: #271A45;
+    color: #fff;
+}
+
+.product > div{
+    display:flex;
+    justify-content: right;
+}
+
+.button-360{
+    position: relative;
+    bottom: -3rem;
+    left: -5rem;
+
+    width: calc(2rem * var(--redimensionamento));
+
+    cursor: pointer;
+    
+}
+
+#closeGif{
+    display: none;
+    width: calc(1rem * var(--redimensionamento));
+}
+
+.sofa{
+    
+    z-index: -1;
+
+    width: calc(28.0625rem * var(--redimensionamento));
+}
+.imageToGif{
+    width: calc(28.0625rem * var(--redimensionamento));
+}
+
+.activeGif{
+    width: calc(28.0625rem * var(--redimensionamento));
+    display: none;
+}
+
+@media screen and (max-width: 1237px){
+    :root{
+        --redimensionamento: 1.4;
+    }
+}
+
+@media screen and (max-width: 1061px){
+    :root{
+        --redimensionamento: 1.2;
+    }
+}
+
+@media screen and (max-width: 890px){
+    :root{
+        --redimensionamento: 1;
+    }
+    
+    
+}
+
+@media screen and (max-width: 748px) and (min-width:600px){
+    :root{
+        --redimensionamento: 1;
+    }
+    div, body{
+        overflow: hidden;
+    }
+    
+    #main-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-360{
+        bottom: -2rem;
+    }
+
+    .product-description{
+        gap: 0.5rem;
+    }
+    .price{
+        font-size: 1rem;
+    }
+
+    button{
+        margin-top: 1rem;
+        width: 100%;
+    }
+    
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+    :root{
+        --redimensionamento: 1.1;
+    }
+    div, body{
+        overflow: hidden;
+    }
+    
+    #main-container{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .button-360{
+        bottom: -2rem;
+        left: -6rem;
+    }
+
+    .product{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-description{
+        gap: 0.5rem;
+        
+    }
+    
+    
+    .price{
+        font-size: 1rem;
+    }
+
+    button{
+        margin-top: 1rem;
+        width: 100%;
+    }
+}
+
+@media screen and (min-device-width: 300px) and (max-device-width: 600px) {
+    :root{
+        --redimensionamento: 1.1;
+    }
+    div, body{
+        overflow: hidden;
+    }
+    
+    #main-container{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .button-360{
+        bottom: -2rem;
+        left: -6rem;
+    }
+
+    .product{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-description{
+        gap: 0.5rem;
+        
+    }
+    
+    .price{
+        font-size: 1rem;
+    }
+
+    button{
+        margin-top: 1rem;
+        width: 100%;
+    }
+}
+
+@media screen and (min-device-width: 600px) and (max-device-width: 1000px) and (min-device-height: 800px) and (max-device-height:1400px){
+    :root{
+        --redimensionamento: 2;
+    }
+    div, body{
+        overflow: hidden;
+    }
+    
+    #main-container{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .button-360{
+        bottom: -4rem;
+        left: -10rem;
+    }
+
+    .product{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-description{
+        gap: 0.5rem;
+    }
+    .price{
+        font-size: 1rem;
+    }
+
+    button{
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (min-device-width: 200px) and (max-device-width: 350px) {
+    :root{
+        --redimensionamento: 0.8;
+    }
+    div, body{
+        overflow: hidden;
+    }
+    
+    #main-container{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .button-360{
+        bottom: -2rem;
+        left: -6rem;
+    }
+
+    .product{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-description{
+        gap: 0.5rem;
+        
+    }
+    
+    .price{
+        font-size: 1rem;
+    }
+
+    button{
+        margin-top: 1rem;
+        width: 100%;
+    }
+}
+
+@media screen and (device-width: 653px) and (device-height: 280px) {
+    :root{
+        --redimensionamento: 0.8;
+    }
+    div, body{
+        overflow: hidden;
+    }
+    #main-container{
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+    }
+}
+
+@media screen and (device-width: 667px) and (device-height: 375px) {
+    :root{
+        --redimensionamento: 0.8;
+    }
+    div, body{
+        overflow: hidden;
+    }
+    #main-container{
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+    }
+}
