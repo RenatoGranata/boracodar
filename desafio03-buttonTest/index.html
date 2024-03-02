@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/phosphor-icons"></script>
+</head>
+<body>
+    <div id="main-container">
+        <div class="buttons-container">
+            <div class="info">
+                <h2>Tipos de botão</h2>
+                <p>
+                    Dentro de um layout, botões servem para destacar ações importantes a serem tomadas. 
+
+                </p>
+                <p>
+                    Acompanhe abaixo um exemplo de tipos e propriedades.
+                </p>
+            </div>
+            <div class="button-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th> </th>
+                            <th>Botão primário</th>
+                            <th>Botão secundário</th>
+                            <th>Botão terciário</th>
+                            <th>Cursor</th>
+                        </tr>
+                        
+                        
+                    </thead>
+
+                    <tbody>
+                        <tr class="Default-buttons">
+                            <td class="vertical-head">
+                                <a href="#" onclick="getPosition(event)">
+                                    default
+                                </a>
+                            </td>
+                            <td>
+                                <button class="primary-button">
+                                    Default primary
+                                </button>
+                            </td>
+                            <td>
+                                <button class="secundary-button">
+                                    Default secundary
+                                </button>
+                            </td>
+                            <td>
+                                <button class="tertiary-button">
+                                    Default tertiary
+                                </button>
+                            </td>
+                            <td>
+                                
+                            </td>
+                            
+                        </tr>
+                        <tr class="hover-buttons">
+                            <td class="vertical-head">
+                                <a href="#" onclick="getPosition(event)">
+                                    hover
+                                </a>
+                            </td>
+                            <td>
+                                <button class="primary-button">
+                                    Hover primary
+                                </button>
+                            </td>
+                            <td>
+                                <button class="secundary-button">
+                                    Hover secundary
+                                </button>
+                            </td>
+                            <td>
+                                <button class="tertiary-button">
+                                    Hover tertiary
+                                </button>
+                            </td>
+                            <td>
+                                
+                            </td>
+                            
+                        </tr>
+                        <tr class="focus-buttons">
+                            <td class="vertical-head">
+                                <a href="#" onclick="getPosition(event)">
+                                    focus
+                                </a>
+                            </td>
+                            <td>
+                                <button class="primary-button">
+                                    Focus primary
+                                </button>
+                            </td>
+                            <td>
+                                <button class="secundary-button">
+                                    Focus secundary
+                                </button>
+                            </td>
+                            <td>
+                                <button class="tertiary-button">
+                                    Focus tertiary
+                                </button>
+                            </td>
+                            <td>
+                                
+                            </td>
+                            
+                        </tr>
+                        <tr class="disabled-buttons">
+                            <td class="vertical-head">
+                                <a href="#" onclick="getPosition(event)">
+                                    disabled
+                                </a>
+                            </td>
+                            <td>
+                                <button class="primary-button">
+                                    disabled primary
+                                </button>
+                            </td>
+                            <td>
+                                <button class="secundary-button">
+                                    disabled secundary
+                                </button>
+                            </td>
+                            <td>
+                                <button class="tertiary-button">
+                                    disabled tertiary
+                                </button>
+                            </td>
+                            <td>
+                                
+                            </td>
+                            
+                        </tr>
+                        <tr class="loading-buttons">
+                            <td class="vertical-head">
+                                <a href="#" class="animate" onclick="getPosition(event)">
+                                    loading
+                                </a>
+                            </td>
+                            <td>
+                                <button class="primary-button">
+                                    <i class="ph-circle-notch-bold"></i>
+                                    loading primary
+                                </button>
+                            </td>
+                            <td>
+                                <button class="secundary-button">
+                                    <i class="ph-circle-notch-bold"></i>
+                                    loading secundary
+                                </button>
+                            </td>
+                            <td>
+                                <button class="tertiary-button">
+                                    <i class="ph-circle-notch-bold"></i>
+                                    loading tertiary
+                                </button>
+                            </td>
+                            <td>
+                                
+                            </td>
+                            
+                        </tr>
+                        <tr class="movable-buttons">
+                            <td class="vertical-head">
+                                <a href="#" onclick="getPosition(event)">
+                                    movable
+                                </a>
+                            </td>
+                            <td>
+                                <button class="primary-button">
+                                    <img src="./assets/movable-01.png" alt="">
+                                    movable primary
+                                </button>
+                            </td>
+                            <td>
+                                <button class="secundary-button">
+                                    <img src="./assets/movable-01.png" alt="">
+                                    movable secundary
+                                </button>
+                            </td>
+                            <td>
+                                <button class="tertiary-button">
+                                    <img src="./assets/movable-01.png" alt="">
+                                    movable tertiary
+                                </button>
+                            </td>
+                            <td>
+                                
+                            </td>
+                            
+                        </tr>
+                        <tr class="pixel-buttons">
+                            <td class="vertical-head">
+                                <a href="#" class="animate" onclick="getPosition(event)">
+                                    animation01
+                                </a>
+                            </td>
+                            <td>
+                                <button class="primary-button">
+                                    
+                                    Pixel primary
+                                </button>
+                            </td>
+                            <td>
+                                <button class="secundary-button">
+                                    
+                                    Pixel secundary
+                                </button>
+                            </td>
+                            <td>
+                                <button class="tertiary-button">
+                                    
+                                    Pixel tertiary
+                                </button>
+                            </td>
+                            <td>
+                                
+                            </td>
+                            
+                        </tr>
+                        
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="button-test">
+            <div class="test-info">
+                <h2>Teste os botões</h2>
+                <p>Interaja com os botões e observe a mudança de aparência e de cursores</p>
+            </div>
+
+            <div class="interactive-buttons">
+                <!-- <button class="primary-button" onclick="loadingAnimate()">Interaja comigo</button>
+                <button class="secundary-button" onclick="loadingAnimate()">Interaja comigo</button>
+                <button class="tertiary-button" onclick="loadingAnimate()">Interaja comigo</button> -->
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
